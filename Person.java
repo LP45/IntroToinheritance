@@ -14,6 +14,9 @@ public class Person {
 			this.pgender = gender;
 		}
 		
+		void hello() {
+			System.out.println("Hi there");
+		}
 		void display() {
 			System.out.println("Name " + pname);
 			System.out.println("Age " + page);
@@ -25,7 +28,10 @@ public class Person {
 			System.out.println("Within parameterized display.....  ");
 			System.out.println("Name: " +obj.pname );
 		}
-		
+		 double calculate(int num) {
+			System.out.println("Calculate inside parent class");
+			return 121.43;
+		}
 		static void totalPeople()
 		{
 			System.out.println("You have made " + count + "Person objects" );

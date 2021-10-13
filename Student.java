@@ -16,19 +16,26 @@ public class Student extends Person {
 		this.subject2 = subject2;
 		this.subject3 = subject3;	
 	}
+	void hello() {
+		System.out.println("Good Morning");
+	}
 	
+	
+	double calculate(int num) {
+		System.out.println("Calculate inside child method");
+		double average = this.subject1+this.subject2+this.subject3 / num;
+		return average;
+	}
 	void display() {
 		System.out.println(this.id);
 //		super.display();
 		System.out.println("Subject score 1 "+ this.subject1);
 		System.out.println("Subject score 2 " + this.subject2);
 		System.out.println("Subject score 3 " +this.subject3);
-		super.totalPeople();
+		System.out.println(this.calculate(100));
+		System.out.println(calculate(100));
 		
-		
-		
-		
-		
+		//super.totalPeople();	
 	}
 
 
